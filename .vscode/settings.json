@@ -1,3 +1,12 @@
 {
-    "python.pythonPath": "C:\\Users\\owoni\\.virtualenvs\\ennibee-oREntVov\\Scripts\\python.exe"
+  "python.formatting.provider": "black",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/__pycache__": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  }
 }
