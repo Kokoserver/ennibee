@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "category",
+    "accounts",
 ]
 
 MIDDLEWARE = [
@@ -68,7 +70,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "ennibee.wsgi.application"
-
+AUTH_USER_MODEL = "accounts.Account"
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -121,3 +123,6 @@ STATIC_URL = "/static/"
 STATIC_FILE_FOLDER = "static"
 STATIC_ROOT = f"{BASE_DIR}/{STATIC_FILE_FOLDER}"
 STATICFILES_DIRS = [f"ennibee/{STATIC_FILE_FOLDER}"]
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = f"{BASE_DIR}/media"
